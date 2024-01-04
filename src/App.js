@@ -2,6 +2,8 @@ import React from 'react';
 
 import Badge from "react-bootstrap/Badge";
 
+import './App.css';
+
 export default class App extends React.Component {
   render() {
     return (
@@ -25,6 +27,9 @@ export default class App extends React.Component {
                     Input
                   </Badge>
                 </h4>
+                <div className="markdown-input">
+                  <textarea className="input-box"> </textarea>
+                </div>
               </div>
             </div>
 
