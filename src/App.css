@@ -1,16 +1,27 @@
-.input-box {
-    margin-left: auto;
-    margin-right: auto;
+.App {
+    background-color: lightblue;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box,
+.preview-box {
+    flex: 1;
+    height: 100vh;
     width: 33vw;
-    height: 50vh;
     padding: 1rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.input-box {
+    background-color: black;
+    color: white;
 }
 
 .preview-box {
-    margin-left: auto;
-    margin-right: auto;
-    width: 33vw;
-    height: 50vh;
-    padding: 1rem;
-    background-color: #dddddd;
+    background-color: white;
+    color: black;
 }
