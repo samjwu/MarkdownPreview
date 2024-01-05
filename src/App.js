@@ -40,6 +40,7 @@ export default class App extends React.Component {
                     Preview
                   </Badge>
                 </h4>
+                <div className="preview-box"></div>
               </div>
             </div>
           </div>
