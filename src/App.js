@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Badge from "react-bootstrap/Badge";
+import { marked } from 'marked';
 
 import './App.css';
 
@@ -13,7 +14,7 @@ export default class App extends React.Component {
   }
 
   updateInput(input) {
-    this.setState({ inputMarkdown : input });
+    this.setState({ inputMarkdown: input });
   }
 
   render() {
@@ -57,7 +58,10 @@ export default class App extends React.Component {
                     Preview
                   </Badge>
                 </h4>
-                <div className="preview-box"></div>
+                <div
+                  className="preview-box"
+                  dangerouslySetInnerHTML={{ __html: marked(this.state.inputMarkdown) }}>
+                </div>
               </div>
             </div>
           </div>
