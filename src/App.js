@@ -5,6 +5,17 @@ import Badge from "react-bootstrap/Badge";
 import './App.css';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      inputMarkdown: "",
+    };
+  }
+
+  updateInput(input) {
+    this.setState({ inputMarkdown : input });
+  }
+
   render() {
     return (
       <div className="App">
@@ -28,7 +39,13 @@ export default class App extends React.Component {
                   </Badge>
                 </h4>
                 <div className="markdown-input">
-                  <textarea className="input-box"> </textarea>
+                  <textarea
+                    className="input-box"
+                    value={this.state.inputMarkdown}
+                    onChange={(e) => {
+                      this.updateInput(e.target.value)
+                    }}>
+                  </textarea>
                 </div>
               </div>
             </div>
