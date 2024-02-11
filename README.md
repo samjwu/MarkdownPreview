@@ -2,6 +2,8 @@
 
 A live Markdown renderer
 
+![Markdown Preview](markdownpreview.PNG)
+
 ## Available Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
